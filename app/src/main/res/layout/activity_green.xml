@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StartBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Green"
+    android:background="#0F5C12">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="237dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Simon Says!"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scoreText"
+        android:text="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="5dp"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/greenBtn"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:textSize="40dp"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="#2FBA10"
+        android:textColor="#070606" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/yellowBtn"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:textSize="40dp"
+        android:layout_below="@id/greenBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#FFFF00"
+        android:textColor="#070606" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/blueBtn"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:textSize="40dp"
+        android:layout_below="@id/yellowBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#0000FF"
+        android:textColor="#070606" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/redBtn"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:textSize="40dp"
+        android:layout_below="@id/blueBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#F62314"
+        android:textColor="#070606" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/restartBtn"
+        android:text="RESTART"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:textSize="35dp"
+        android:layout_below="@id/redBtn"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:layout_marginTop="100dp"
+        android:background="#FFFF00"
+        android:textColor="#070606"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

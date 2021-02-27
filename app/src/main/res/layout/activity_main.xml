@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StartBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="237dp"
+        android:layout_height="70dp"
+        android:fontFamily="cursive"
+        android:text="Simon Says!"
+        android:textColor="#390C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_centerHorizontal="true"
+        tools:textSize="44sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        tools:layout_marginTop="80dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="80dp"
+        android:text="Start"
+        android:textColor="#070606"
+        tools:layout_below="@id/imageView"
+        tools:layout_centerHorizontal="true"
+        tools:layout_marginTop="50dp"
+        tools:layout_width="330dp"
+        tools:textSize="40dd"
+        tools:textStyle="bold" />
+
+</RelativeLayout>
